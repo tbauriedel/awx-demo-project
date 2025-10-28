@@ -1,0 +1,10 @@
+---
+- name: Gather Facts
+  hosts: all
+  gather_facts: true
+  tasks:
+    - debug:
+        msg: "Collected facts for host"
+
+    - debug:
+        var: ansible_facts
